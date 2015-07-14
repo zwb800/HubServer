@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : HubServer : HubServer-1.0.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/HubServer</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="HubServer-1.0.war">
+      <element id="javaee-facet-resources" facet="HubServer/web/Web Gradle : HubServer-1.0.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HubServer" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.1.6.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.5.3" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/HubServer/exploded/HubServer-1.0.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
