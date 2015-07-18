@@ -11,17 +11,19 @@ import java.io.IOException;
  * Created by admin2 on 2015/7/15.
  */
 public class XMPush {
+    public static final String APP_SECRET = "TOrA9OlkZYhMysgsHtmT5w==";
+    public static final String APP_PACKAGE = "com.mobilejohnny.iotserver";
 
     public static boolean send(String regid,String msg)
     {
         boolean re = false;
         com.xiaomi.xmpush.server.Constants.useOfficial();
-        Sender sender = new Sender(Constants.APP_SECRET);
+        Sender sender = new Sender(APP_SECRET);
         Message message = new Message.Builder()
                 .payload(msg)
                 .passThrough(1)
-                .timeToLive(1000)
-                .restrictedPackageName(Constants.APP_PACKAGE)
+                .timeToLive(3000)
+                .restrictedPackageName(APP_PACKAGE)
                 .build();
 
         try {
