@@ -21,4 +21,5 @@ dependencies {
     compile 'org.hibernate:hibernate-entitymanager:4.3.10.Final'
     compile 'mysql:mysql-connector-java:5.1.36'
     compile 'commons-dbcp:commons-dbcp:1.4'
+
 }
